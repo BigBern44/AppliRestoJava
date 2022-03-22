@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62f62880-7a41-4b54-9be1-3c99a0779045" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/build/classes/.netbeans_automatic_build" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/.netbeans_update_resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modele/metier/utilisateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vue/VueConnexion.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vue/VueInscription.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vue/VueStart.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ConnectBDD/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Connect_bdd/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/AppliResto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/ChoixAuthentification$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/ChoixAuthentification$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/ChoixAuthentification$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/ChoixAuthentification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Connexion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/appliresto/Inscription$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/appliresto/Inscription$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/appliresto/Inscription$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/appliresto/AppliResto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controleur/AppliResto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue/ChoixAuthentification.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue/ChoixAuthentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/VueStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue/Connexion.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue/Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/VueConnexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue/Inscription.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/VueInscription.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="26i4TkUFeFTPG11F6P0odRRsbzU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62f62880-7a41-4b54-9be1-3c99a0779045" name="Changes" comment="" />
+      <created>1647893085415</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647893085415</updated>
+      <workItem from="1647893088124" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
