@@ -81,7 +81,7 @@ public class CtrlCommentaire  extends ControleurGenerique implements ActionListe
                 ligneDonnees[0] = Integer.toString(unCommentaire.getIdR());
                 ligneDonnees[1] = Integer.toString(unCommentaire.getNote());
                 ligneDonnees[2] = unCommentaire.getCommentaire();
-                ligneDonnees[3] = DaoUtilisateur.getUserById(unCommentaire.getIdu()).getLogin();
+                ligneDonnees[3] = DaoUtilisateur.getUserById(unCommentaire.getIdu()).getPseudoU();
                 
                 getVue().getModeleTableCommentaire().addRow(ligneDonnees);
             }

@@ -31,9 +31,9 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
         try {
            PreparedStatement ps = Jdbc.getInstance().getConnexion().prepareStatement(requete);
            
-            ps.setString(1, unUtilisateur.getLogin());
-            ps.setString(2, MD5Hash(unUtilisateur.getMdp()));
-            ps.setString(3,unUtilisateur.getEmail());
+            ps.setString(1, unUtilisateur.getPseudoU());
+            ps.setString(2, MD5Hash(unUtilisateur.getMdpU()));
+            ps.setString(3,unUtilisateur.getMailU());
             
             result = ps.executeUpdate();
             
@@ -59,7 +59,7 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
         if (rs.next()) {
 
                 Utilisateur user = (Utilisateur) chargerUnEnregistrement(rs);
-                if (user.getMdp().equals(MD5Hash(mdp))){
+                if (user.getMdpU().equals(MD5Hash(mdp))){
                     result = true;
 
                 }
@@ -180,13 +180,13 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
         try {
             Utilisateur user = new Utilisateur();
             
-            user.setId(rs.getInt("IDU"));
+            user.setIdU(rs.getInt("IDU"));
             
-            user.setEmail(rs.getString("MAILU"));
+            user.setMailU(rs.getString("MAILU"));
             
-            user.setLogin(rs.getString("PSEUDOU"));
+            user.setPseudoU(rs.getString("PSEUDOU"));
             
-            user.setMdp(rs.getString("MDPU"));
+            user.setMdpU(rs.getString("MDPU"));
             
         
             return user;
