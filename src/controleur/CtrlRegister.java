@@ -15,7 +15,9 @@ import java.security.spec.InvalidKeySpecException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import modele.jpa.utilisateurJPA;
+import modele.dao.DaoUtilisateur;
+
+import modele.metier.Utilisateur;
 import vue.VueInscription;
 import vue.VueStart;
 
@@ -50,16 +52,26 @@ public class CtrlRegister extends ControleurGenerique implements ActionListener,
                 JOptionPane jop1 = new JOptionPane();
                 jop1.showMessageDialog(null, "Veuillez renseigner tous les champs", "Attention", JOptionPane.WARNING_MESSAGE);
                 
-            } else {
-                if (utilisateurJPA.findUserByEmail(getVue().getjTextFieldEmail().getText())==null) {
-                    
-                    utilisateurJPA.registerUser(getVue().getjTextFieldEmail().getText(),getVue().getjTextFieldLogin().getText(),pwd);
-                    getVue().dispose();
-                    
-                } else {
-                    JOptionPane jop1 = new JOptionPane();
-                    jop1.showMessageDialog(null, "Adresse email deja utilisé", "Attention", JOptionPane.WARNING_MESSAGE);
+            } else {           
+                try {
+                    if (!DaoUtilisateur.verifIfExist(getVue().getjTextFieldEmail().getText())) {
+                        
+                        try {
+                            DaoUtilisateur.registerUser(new Utilisateur(getVue().getjTextFieldEmail().getText(),getVue().getjTextFieldLogin().getText(),pwd));
+                        } catch (Exception ex) {
+                            Logger.getLogger(CtrlRegister.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        
+                        getVue().dispose();
+                        
+                    } else {
+                        JOptionPane jop1 = new JOptionPane();
+                        jop1.showMessageDialog(null, "Adresse email deja utilisé", "Attention", JOptionPane.WARNING_MESSAGE);
+                    }
+                } catch (Exception ex) {
+                    Logger.getLogger(CtrlRegister.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                
               
             
             }

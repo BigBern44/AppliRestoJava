@@ -14,6 +14,7 @@ public class CtrlPrincipal {
     private CtrlLogin ctrlLogin = null;
     private CtrlRegister ctrlRegister = null;
     private CtrlStart ctrlStart = null;
+    private CtrlCommentaire ctrlCommentaire = null;
     
     
     public void action() {
@@ -21,6 +22,8 @@ public class CtrlPrincipal {
             ctrlStart = new CtrlStart(this);
 
         }
+        
+
         ctrlStart.getVue().setEnabled(true);
         ctrlStart.getVue().setVisible(true);
     }
@@ -28,6 +31,10 @@ public class CtrlPrincipal {
     
     public void action(EnumAction action) {
         switch (action) {
+            case COMMENTAIRE:
+                menuCommentaire();
+                break;
+  
             case INSCRIPTION_PAGE: // activation de vuePresence depuis vueMenu
                 menuInscription();
                 break;
@@ -38,23 +45,32 @@ public class CtrlPrincipal {
         }
 
     }
-    
-      private void menuInscription() {
-        if (ctrlRegister == null) {
-            ctrlRegister = new CtrlRegister(this);
-        }
-
+       
+     
+        private void menuInscription() {
+            if (ctrlRegister == null) {
+                ctrlRegister = new CtrlRegister(this);
+            }
         ctrlRegister.getVue().setEnabled(true);
         ctrlRegister.getVue().setVisible(true);
     }
       
-       private void menuConnexion() {
-        if (ctrlLogin == null) {
-            ctrlLogin = new CtrlLogin(this);
-        }
+        private void menuConnexion() {
+            if (ctrlLogin == null) {
+                ctrlLogin = new CtrlLogin(this);
+            }
 
         ctrlLogin.getVue().setEnabled(true);
         ctrlLogin.getVue().setVisible(true);
     }
+    
+        private void menuCommentaire(){
+            if( ctrlCommentaire == null){
+                ctrlCommentaire = new CtrlCommentaire(this);
+            }
+            ctrlCommentaire.getVue().setEnabled(true);
+            ctrlCommentaire.getVue().setVisible(true);
+            
+        }
       
 }

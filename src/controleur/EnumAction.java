@@ -14,5 +14,6 @@ public enum  EnumAction {
     ,INSCRIPTION_PAGE
     ,CONNEXION
     ,INSCRIPTION
+    ,COMMENTAIRE
 
 }

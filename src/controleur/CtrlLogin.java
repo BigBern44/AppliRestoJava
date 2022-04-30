@@ -9,10 +9,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import modele.jpa.utilisateurJPA;
+import modele.dao.DaoUtilisateur;
 import vue.VueConnexion;
-import vue.VueInscription;
+
 
 
 /**
@@ -47,12 +49,18 @@ public class CtrlLogin extends ControleurGenerique implements ActionListener, Wi
                 
             } else {
                    
-                    if(utilisateurJPA.LoginUser(getVue().getjTextFieldEmail().getText(), pwd)){
-                         getVue().dispose();
+                try {
+                    if(DaoUtilisateur.loginUser(getVue().getjTextFieldEmail().getText(), pwd)){
+                        this.getCtrlPrincipal().action(EnumAction.COMMENTAIRE);
+                        getVue().dispose();
+                        
                     }else{
                         JOptionPane jop1 = new JOptionPane();
                         jop1.showMessageDialog(null, "Les identifiants sont incorrects", "Attention", JOptionPane.WARNING_MESSAGE);
                     }
+                } catch (Exception ex) {
+                    Logger.getLogger(CtrlLogin.class.getName()).log(Level.SEVERE, null, ex);
+                }
                    
                     
               
