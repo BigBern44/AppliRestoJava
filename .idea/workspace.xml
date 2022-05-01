@@ -2,36 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62f62880-7a41-4b54-9be1-3c99a0779045" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/build/classes/.netbeans_automatic_build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/.netbeans_update_resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modele/metier/utilisateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vue/VueConnexion.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vue/VueInscription.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vue/VueStart.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliResto.properties" beforeDir="false" afterPath="$PROJECT_DIR$/appliResto.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/ConnectBDD/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/Connect_bdd/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/AppliResto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/ChoixAuthentification$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/ChoixAuthentification$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/ChoixAuthentification$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/ChoixAuthentification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Connexion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/appliresto/Inscription$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/appliresto/Inscription$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/appliresto/Inscription$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Connexion$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/appliresto/Inscription$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/ControleurGenerique.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/ControleurGenerique.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/CtrlCommentaire$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/CtrlCommentaire$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/CtrlCommentaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/CtrlCommentaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/CtrlLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/CtrlLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/CtrlPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/CtrlPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/CtrlRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/CtrlRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/CtrlStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/CtrlStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/EnumAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/EnumAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controleur/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controleur/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/dao/DaoCommentaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/modele/dao/DaoCommentaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/dao/DaoInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/modele/dao/DaoInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/dao/DaoUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/modele/dao/DaoUtilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/dao/ExceptionDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/jdbc/FabriqueJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/modele/jdbc/FabriqueJdbc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/jdbc/Jdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/modele/jdbc/Jdbc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/jdbc/JdbcInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/modele/jdbc/JdbcInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/metier/Commentaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/modele/metier/Commentaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/modele/metier/Utilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/modele/metier/Utilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/resouces.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueCommentaire$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueCommentaire$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueCommentaire$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueCommentaire$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueCommentaire$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueCommentaire$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueCommentaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueCommentaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueCommentaire.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueConnexion$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueConnexion$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueConnexion$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueConnexion$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueConnexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueConnexion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueConnexion.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueInscription$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueInscription$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueInscription$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueInscription$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueInscription$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueInscription$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueInscription$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueInscription$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueInscription.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueInscription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueInscription.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueStart$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueStart$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueStart$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueStart$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/vue/VueStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/vue/VueStart.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-sources/ap-source-output/modele/metier/utilisateur_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/appliresto/AppliResto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controleur/AppliResto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vue/ChoixAuthentification.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vue/ChoixAuthentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/VueStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vue/Connexion.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vue/Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/VueConnexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vue/Inscription.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vue/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/VueInscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controleur/CtrlCommentaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controleur/CtrlCommentaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controleur/CtrlRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controleur/CtrlRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modele/dao/DaoCommentaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/dao/DaoCommentaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modele/dao/DaoUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/dao/DaoUtilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modele/dao/ExceptionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/dao/DaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modele/metier/Commentaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/metier/Commentaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue/VueCommentaire.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/VueCommentaire.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue/VueCommentaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/VueCommentaire.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,15 +79,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="26i4TkUFeFTPG11F6P0odRRsbzU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -64,10 +105,23 @@
       <option name="presentableId" value="Default" />
       <updated>1647893085415</updated>
       <workItem from="1647893088124" duration="19000" />
+      <workItem from="1651351889657" duration="202000" />
+      <workItem from="1651413690638" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

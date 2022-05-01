@@ -7,6 +7,7 @@ package vue;
 
 import javax.swing.DefaultListSelectionModel;
 import javax.swing.JButton;
+import javax.swing.JRadioButton;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
@@ -46,6 +47,9 @@ public class VueCommentaire extends VueGenerique {
         jButtonRetour = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTableCommentaire = new javax.swing.JTable();
+        jButtonSupprimer = new javax.swing.JButton();
+        jButtonMasquer = new javax.swing.JButton();
+        jRadioButtonMasquer = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,25 +78,47 @@ public class VueCommentaire extends VueGenerique {
         });
         jScrollPane2.setViewportView(jTableCommentaire);
 
+        jButtonSupprimer.setText("Supprimer");
+        jButtonSupprimer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSupprimerActionPerformed(evt);
+            }
+        });
+
+        jButtonMasquer.setText("Masquer");
+
+        jRadioButtonMasquer.setText("Que les critiques masquées");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1043, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButtonRetour)))
+                        .addComponent(jRadioButtonMasquer)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonMasquer)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButtonSupprimer)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButtonRetour))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 1057, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
-                .addComponent(jButtonRetour)
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButtonRetour)
+                        .addComponent(jButtonSupprimer)
+                        .addComponent(jButtonMasquer))
+                    .addComponent(jRadioButtonMasquer))
                 .addContainerGap())
         );
 
@@ -104,8 +130,12 @@ public class VueCommentaire extends VueGenerique {
     }//GEN-LAST:event_jButtonRetourActionPerformed
 
     private void jTableCommentaireMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTableCommentaireMouseClicked
-       System.out.println("yoyoyo");
+
     }//GEN-LAST:event_jTableCommentaireMouseClicked
+
+    private void jButtonSupprimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSupprimerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonSupprimerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,7 +171,17 @@ public class VueCommentaire extends VueGenerique {
             }
         });
     }
-    public DefaultTableModel getModeleTableCommentaire() {
+  
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonMasquer;
+    private javax.swing.JButton jButtonRetour;
+    private javax.swing.JButton jButtonSupprimer;
+    private javax.swing.JRadioButton jRadioButtonMasquer;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTableCommentaire;
+    // End of variables declaration//GEN-END:variables
+  public DefaultTableModel getModeleTableCommentaire() {
         return modeleTableCommentaire;
     }
     
@@ -149,13 +189,21 @@ public class VueCommentaire extends VueGenerique {
         return jTableCommentaire;
     }
     
+    public JButton getjButtonMasquer() {
+        return jButtonMasquer;
+    }
+    
+    public JButton getjButtonSupprimer() {
+        return jButtonSupprimer;
+    }
+    
     public JButton getjButtonRetour() {
         return jButtonRetour;
     }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonRetour;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTableCommentaire;
-    // End of variables declaration//GEN-END:variables
+    
+    public JRadioButton getJRadioButtonMasquer() {
+        return jRadioButtonMasquer;
+    }
+    
+    
 }

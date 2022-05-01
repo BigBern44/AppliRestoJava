@@ -3,28 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/vue/VueConnexion.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/controleur/CtrlPrincipal.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/vue/VueGenerique.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/dao/DaoInterface.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/metier/Utilisateur.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/vue/VueCommentaire.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/controleur/CtrlRegister.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/controleur/ControleurGenerique.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/controleur/EnumAction.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/metier/Commentaire.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/controleur/CtrlLogin.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/controleur/CtrlStart.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/controleur/Main.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/vue/VueInscription.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/dao/DaoUtilisateur.java</file>
             <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/jdbc/Jdbc.java</file>
             <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/jdbc/FabriqueJdbc.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/dao/ExceptionDAO.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/controleur/CtrlCommentaire.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/dao/DaoCommentaire.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/vue/VueStart.java</file>
-            <file>file:/C:/Users/33652/Desktop/AppliRestoJava/src/modele/jdbc/JdbcInterface.java</file>
         </group>
     </open-files>
 </project-private>

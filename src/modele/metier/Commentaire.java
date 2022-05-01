@@ -17,16 +17,19 @@ public class Commentaire {
     private int note;
     private String commentaire;
     private int idu;
+    private String masquer;
 
+   
     public Commentaire(){
         
     }
    // "this" désigne l'objet courant
-    public Commentaire(int idR, int note, String commentaire, int idu) {
+    public Commentaire(int idR, int note, String commentaire, int idu, String masquer) {
        this.idR = idR;
        this.note = note;
        this.commentaire = commentaire;
        this.idu = idu;
+       this.masquer = masquer;
 
        
     }
@@ -68,6 +71,15 @@ public class Commentaire {
     public void setIdu(int idu) {
         this.idu = idu;
     }
+    
+    public String getMasquer() {
+        return masquer;
+    }
+
+    public void setMasquer(String masquer) {
+        this.masquer = masquer;
+    }
+
 
    
 

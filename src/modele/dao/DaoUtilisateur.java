@@ -26,7 +26,7 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
         int result = 0;
         ResultSet rs = null;
         // préparer la requête
-        String requete = "INSERT INTO utilisateur(pseudoU, mdpU, mailU, adminU) VALUES (?,?,?,1) ";
+        String requete = "INSERT INTO utilisateur(pseudoU, mdpU, mailU) VALUES (?,?,?) ";
         
         try {
            PreparedStatement ps = Jdbc.getInstance().getConnexion().prepareStatement(requete);
@@ -38,7 +38,7 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
             result = ps.executeUpdate();
             
         } catch (SQLException ex) {
-            throw new ExceptionDAO("DaoPresence - create : pb JDBC\n" + ex.getMessage());
+            throw new DaoException("DaoPresence - create : pb JDBC\n" + ex.getMessage());
         }
         return result;
     }
@@ -71,7 +71,7 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
         }
         return result;
     }
-    public static boolean verifIfExist(String email) throws ExceptionDAO {
+    public static boolean verifIfExist(String email) throws DaoException {
         boolean result = false;
         ResultSet rs = null;
         String requete = "SELECT * FROM utilisateur WHERE mailU = ?";
@@ -97,7 +97,7 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
         return result;
     }
      
-    public  static Utilisateur getUserByEmail(String email) throws Exception {
+    public static Utilisateur getUserByEmail(String email) throws Exception {
         
 
         ResultSet rs = null;
@@ -176,7 +176,7 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
 
 }
     
-     public static Utilisateur chargerUnEnregistrement(ResultSet rs) throws ExceptionDAO {
+     public static Utilisateur chargerUnEnregistrement(ResultSet rs) throws DaoException {
         try {
             Utilisateur user = new Utilisateur();
             
@@ -192,7 +192,7 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
             return user;
             
         } catch (SQLException ex) {
-            throw new ExceptionDAO("DaoEquipier - chargerUnEnregistrement : pb JDBC\n" + ex.getMessage());
+            throw new DaoException("DaoEquipier - chargerUnEnregistrement : pb JDBC\n" + ex.getMessage());
         }
     }
 

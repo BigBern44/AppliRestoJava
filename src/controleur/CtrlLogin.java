@@ -44,8 +44,7 @@ public class CtrlLogin extends ControleurGenerique implements ActionListener, Wi
       if (e.getSource().equals(getVue().getjButtonConnexion())){
             String pwd = new String(getVue().getjPasswordFieldMdp().getPassword());
             if (((getVue().getjTextFieldEmail().getText()).equals("")) || (pwd.equals(""))){
-                JOptionPane jop1 = new JOptionPane();
-                jop1.showMessageDialog(null, "Veuillez renseigner tous les champs", "Attention", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Veuillez renseigner tous les champs", "Attention", JOptionPane.WARNING_MESSAGE);
                 
             } else {
                    
@@ -55,8 +54,7 @@ public class CtrlLogin extends ControleurGenerique implements ActionListener, Wi
                         getVue().dispose();
                         
                     }else{
-                        JOptionPane jop1 = new JOptionPane();
-                        jop1.showMessageDialog(null, "Les identifiants sont incorrects", "Attention", JOptionPane.WARNING_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Les identifiants sont incorrects", "Attention", JOptionPane.WARNING_MESSAGE);
                     }
                 } catch (Exception ex) {
                     Logger.getLogger(CtrlLogin.class.getName()).log(Level.SEVERE, null, ex);
