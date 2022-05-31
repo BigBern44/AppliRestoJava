@@ -14,8 +14,8 @@ public class CtrlPrincipal {
     private CtrlLogin ctrlLogin = null;
     private CtrlRegister ctrlRegister = null;
     private CtrlStart ctrlStart = null;
-    private CtrlCommentaire ctrlCommentaire = null;
-    
+    private CtrlCommentaireModerateur ctrlCommentaireModerateur = null;
+    private CtrlCommentaireResponsable ctrlCommentaireResponsable = null;
     
     public void action() {
         if (ctrlStart == null) {
@@ -31,8 +31,12 @@ public class CtrlPrincipal {
     
     public void action(EnumAction action) {
         switch (action) {
-            case COMMENTAIRE:
-                menuCommentaire();
+              case COMMENTAIREMODERATEUR:
+                menuCommentaireModerateur();
+                break;
+            
+            case COMMENTAIRERESPONSABLE:
+                menuCommentaireResponsable();
                 break;
   
             case INSCRIPTION_PAGE: // activation de vuePresence depuis vueMenu
@@ -64,13 +68,21 @@ public class CtrlPrincipal {
         ctrlLogin.getVue().setVisible(true);
     }
     
-        private void menuCommentaire(){
-            if( ctrlCommentaire == null){
-                ctrlCommentaire = new CtrlCommentaire(this);
+        private void menuCommentaireResponsable(){
+            if( ctrlCommentaireResponsable == null){
+                ctrlCommentaireResponsable = new CtrlCommentaireResponsable(this);
             }
-            ctrlCommentaire.getVue().setEnabled(true);
-            ctrlCommentaire.getVue().setVisible(true);
+            ctrlCommentaireResponsable.getVue().setEnabled(true);
+            ctrlCommentaireResponsable.getVue().setVisible(true);
             
         }
-      
+        
+         private void menuCommentaireModerateur(){
+            if( ctrlCommentaireModerateur == null){
+                ctrlCommentaireModerateur = new CtrlCommentaireModerateur(this);
+            }
+            ctrlCommentaireModerateur.getVue().setEnabled(true);
+            ctrlCommentaireModerateur.getVue().setVisible(true);
+            
+        }
 }

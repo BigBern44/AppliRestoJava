@@ -18,18 +18,22 @@ public class Commentaire {
     private String commentaire;
     private int idu;
     private String masquer;
+    private java.sql.Date dateCreation;
 
+    
    
     public Commentaire(){
         
     }
    // "this" désigne l'objet courant
-    public Commentaire(int idR, int note, String commentaire, int idu, String masquer) {
+    public Commentaire(int idR, int note, String commentaire, int idu, String masquer, Date dateCreation) {
+        
        this.idR = idR;
        this.note = note;
        this.commentaire = commentaire;
        this.idu = idu;
        this.masquer = masquer;
+       this.dateCreation = dateCreation;
 
        
     }
@@ -78,6 +82,14 @@ public class Commentaire {
 
     public void setMasquer(String masquer) {
         this.masquer = masquer;
+    }
+    
+    public Date getDateCreation() {
+        return dateCreation;
+    }
+
+    public void setDateCreation(Date dateCreation) {
+        this.dateCreation = dateCreation;
     }
 
 

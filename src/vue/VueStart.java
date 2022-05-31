@@ -32,7 +32,7 @@ public class VueStart extends VueGenerique {
     private void initComponents() {
 
         ConnexionButton = new javax.swing.JButton();
-        InscriptionButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,32 +43,29 @@ public class VueStart extends VueGenerique {
             }
         });
 
-        InscriptionButton.setText("Inscription");
-        InscriptionButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                InscriptionButtonActionPerformed(evt);
-            }
-        });
+        jLabel1.setText("Connectez-vous pour acceder à l'application");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18))
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(49, 49, 49)
                 .addComponent(ConnexionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
-                .addComponent(InscriptionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ConnexionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(InscriptionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ConnexionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
@@ -78,10 +75,6 @@ public class VueStart extends VueGenerique {
         
     }//GEN-LAST:event_ConnexionButtonActionPerformed
 
-
-    private void InscriptionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InscriptionButtonActionPerformed
-
-    }//GEN-LAST:event_InscriptionButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -123,14 +116,12 @@ public class VueStart extends VueGenerique {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ConnexionButton;
-    private javax.swing.JButton InscriptionButton;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 
-    public JButton getInscriptionButton() {
-        return InscriptionButton;
-    }
 
     public JButton getConnexionButton() {
         return ConnexionButton;
     }
+
 }

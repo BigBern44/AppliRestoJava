@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.sql.Date;
 import static modele.dao.DaoUtilisateur.MD5Hash;
 import modele.metier.Commentaire;
 import modele.jdbc.Jdbc;
@@ -42,13 +43,16 @@ public class DaoCommentaire {
             int note = rs.getInt("note");
             String commentaire = rs.getString("commentaire");
             int idU = rs.getInt("idU");
+            
+            Date date_creation = rs.getDate("date_creation");
+            
             String masquer;
             if (rs.getInt("masquer")==0){
-                masquer = "pas masqué";
+                masquer = "visible";
             }else{
-                masquer = "masqué";
+                masquer = "masquÃ©";
             }
-            uneCritique = new Commentaire(idR, note, commentaire, idU, masquer);
+            uneCritique = new Commentaire(idR, note, commentaire, idU, masquer, date_creation);
             lesCritiques.add(uneCritique);
         }
         return lesCritiques;
@@ -69,18 +73,53 @@ public class DaoCommentaire {
             int note = rs.getInt("note");
             String commentaire = rs.getString("commentaire");
             int idU = rs.getInt("idU");
+            Date date_creation = rs.getDate("date_creation");
             String masquer;
             if (rs.getInt("masquer")==0){
-                masquer = "pas masqué";
+                masquer = "visible";
             }else{
-                masquer = "masqué";
+                masquer = "masquÃ©";
             }
-            uneCritique = new Commentaire(idR, note, commentaire, idU, masquer);
+            uneCritique = new Commentaire(idR, note, commentaire, idU, masquer, date_creation);
             lesCritiques.add(uneCritique);
         }
         return lesCritiques;
     }
-    
+     
+     public static List<Commentaire> selectAllByDate(Date date) throws Exception {
+         
+        List<Commentaire> lesCritiques = new ArrayList<Commentaire>();
+        Commentaire uneCritique;
+        ResultSet rs;
+
+        Jdbc jdbc = Jdbc.getInstance();
+        // prÃ©parer la requÃªte
+        String requete = "SELECT * FROM critiquer WHERE date_creation = ?";
+        
+        PreparedStatement ps = Jdbc.getInstance().getConnexion().prepareStatement(requete);
+        ps.setDate(1, date);
+
+        rs = ps.executeQuery();
+        while (rs.next()) {
+            int idR = rs.getInt("idR");
+            int note = rs.getInt("note");
+            String commentaire = rs.getString("commentaire");
+            int idU = rs.getInt("idU");
+            Date date_creation = rs.getDate("date_creation");
+            String masquer;
+            if (rs.getInt("masquer")==0){
+                masquer = "visible";
+            }else{
+                masquer = "masquÃ©";
+            }
+            uneCritique = new Commentaire(idR, note, commentaire, idU, masquer, date_creation);
+            lesCritiques.add(uneCritique);
+        }
+        return lesCritiques;
+    }
+     
+     
+     
     public static int SupprimerCommentaire(String idR,String idU) throws DaoException  {
         
         PreparedStatement pstmt;
@@ -126,6 +165,8 @@ public class DaoCommentaire {
         return result;
      
     }
+    
+    
     
     public static int DemasquerCommentaire(String idR,String idU) throws DaoException  {
         

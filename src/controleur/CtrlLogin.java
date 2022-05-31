@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -41,6 +42,7 @@ public class CtrlLogin extends ControleurGenerique implements ActionListener, Wi
     
     @Override
     public void actionPerformed(ActionEvent e) {
+        
       if (e.getSource().equals(getVue().getjButtonConnexion())){
             String pwd = new String(getVue().getjPasswordFieldMdp().getPassword());
             if (((getVue().getjTextFieldEmail().getText()).equals("")) || (pwd.equals(""))){
@@ -50,8 +52,22 @@ public class CtrlLogin extends ControleurGenerique implements ActionListener, Wi
                    
                 try {
                     if(DaoUtilisateur.loginUser(getVue().getjTextFieldEmail().getText(), pwd)){
-                        this.getCtrlPrincipal().action(EnumAction.COMMENTAIRE);
-                        getVue().dispose();
+                        
+                        switch (DaoUtilisateur.getUserRoles(getVue().getjTextFieldEmail().getText())) {
+                            case "moderateur":
+                                this.getCtrlPrincipal().action(EnumAction.COMMENTAIREMODERATEUR);
+                                getVue().dispose();
+                                break;
+                            case "responsable":
+                                System.out.println("yo");
+                                this.getCtrlPrincipal().action(EnumAction.COMMENTAIRERESPONSABLE);
+                                getVue().dispose();
+                                break;
+                            default:
+                                JOptionPane.showMessageDialog(null, "Vous n'êtes pas autorisé à vous connecter", "Attention", JOptionPane.WARNING_MESSAGE);
+                                break;
+                        }
+                        
                         
                     }else{
                         JOptionPane.showMessageDialog(null, "Les identifiants sont incorrects", "Attention", JOptionPane.WARNING_MESSAGE);

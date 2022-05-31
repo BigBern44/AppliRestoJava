@@ -16,6 +16,7 @@ import javax.swing.JButton;
  *
  * @author 33652
  */
+
 public class CtrlStart extends ControleurGenerique implements ActionListener, WindowListener {
      public CtrlStart(CtrlPrincipal ctrlPrincipal) {
          
@@ -23,8 +24,7 @@ public class CtrlStart extends ControleurGenerique implements ActionListener, Wi
         
         vue = new VueStart();
         vue.addWindowListener(this);
-        
-        getVue().getInscriptionButton().addActionListener(this);
+
         getVue().getConnexionButton().addActionListener(this);
     }
      
@@ -45,14 +45,11 @@ public class CtrlStart extends ControleurGenerique implements ActionListener, Wi
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource().equals(getVue().getInscriptionButton())){
-            goToInscription();
-        }else{
+
              if (e.getSource().equals(getVue().getConnexionButton())){
                  goToConnexion();
-             }
-             
-        }
+             }       
+        
     }
      
       public void Inscription() {

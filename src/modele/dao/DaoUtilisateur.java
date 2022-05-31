@@ -5,6 +5,7 @@
  */
 package modele.dao;
 
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.PreparedStatement;
@@ -143,6 +144,36 @@ public class DaoUtilisateur  implements DaoInterface<Utilisateur,Integer> {
         return null;
         
      }
+    
+    public static String getUserRoles(String email){
+        ResultSet rs = null;
+        String roles = "aucun";
+        String requete = "SELECT * FROM utilisateur WHERE mailU = ?";
+        
+        try {
+            PreparedStatement ps = Jdbc.getInstance().getConnexion().prepareStatement(requete);   
+            ps.setString(1,email);
+            rs = ps.executeQuery();
+
+        if (rs.next()) {
+
+               roles= rs.getString("role");
+               
+               if (roles == (null)){
+                   
+                   return "aucun";
+               }
+               
+               return roles;
+            }
+        } catch (SQLException ex) {
+            
+        }
+        return null;
+        
+    }
+    
+    
      
     
     public  static String MD5Hash(String mdp){
